@@ -9,19 +9,6 @@ def f1(label):
 
 def f2(label):
     print(label)
-    orszagnev = input("\tKérek egy országot: ")
-    for i in range(len(adatok)):
-        if(orszagnev == adatok):
-            print(ország[i])
-        print('\t', adatok[i].nevezetesség)
-    nevezetesseg = input("\tKérek egy város betűjelét: ")
-    #break
-    for i in range(len(adatok)):
-        if nevezetesseg == adatok:
-            print(város[i])
-
-def f3(label):
-    print(label)
     ország = input('\tKérek egy országot: ')
     #nev = len(adatok[i].ország)
     f = (adatok[0].ország and adatok[4].ország)
@@ -61,6 +48,6 @@ def inputFile(file):
     f.close()
 
 inputFile('nevezetessegek.txt')
-#f1("1.feladat")
-#f2("2.feladat")
-f3("próba")
+f1("1.feladat")
+f2("2.feladat")
+
